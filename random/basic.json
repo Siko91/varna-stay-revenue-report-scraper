@@ -1,0 +1,22 @@
+{
+    "env": "https:\/\/pmsapi.hostify.com\/",
+    "success": true,
+    "items": [
+        {
+            "id": 141830,
+            "thumbnail_file": "https:\/\/img.hostify.com\/888\/listing\/469395-img-md.jpg",
+            "name": "Buena Vista apartment",
+            "nickname": "BUENA VISTA",
+            "auto_pricing_settings": null,
+            "accounting_module": 0,
+            "tags": null,
+            "pricing_settings": null,
+            "smart_pricing_leading_listing": null,
+            "min_nights": 2
+        }
+    ],
+    "e": 0,
+    "s": 0,
+    "sc": 0,
+    "guest": null
+}

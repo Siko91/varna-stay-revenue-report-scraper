@@ -1,0 +1,186 @@
+{
+    "app": {
+        "name": "Hostify.com",
+        "audio_enabled": true,
+        "show_powered_by": true,
+        "team_intro": "How can we help you ?",
+        "team_greeting": "Hi VarnaStay 👋",
+        "messenger_background": "background-7",
+        "expected_response_delay_translation_key": "a_few_minutes",
+        "launcher_expected_response_delay_translation_key": "the_team_typically_replies_in_minutes",
+        "sms_notifications_enabled": false,
+        "inbound_conversations_disabled": false,
+        "office_hours_response": null,
+        "help_center_site_url": "https://help.hostify.com",
+        "messenger_logo_url": null,
+        "launcher_logo_url": null,
+        "user_conversation_gifs_enabled": true,
+        "developer_workspace": false,
+        "upfront_email_collection_setting": "only_outside_of_office_hours",
+        "temporary_expectations_message": null,
+        "localized_expected_response_delay_short_text": "A few minutes",
+        "localized_expected_response_delay_long_text": "We typically reply in a few minutes",
+        "help_center_id": null,
+        "article_auto_reaction_enabled": true,
+        "use_cache_for": []
+    },
+    "user": {
+        "id": "642028544ea3fe5208d06b96",
+        "role": "user_role",
+        "locale": "en",
+        "has_conversations": true,
+        "active_company_id": "944",
+        "country_code": "bg",
+        "last_contacted_at": "2024-06-11T20:32:54.958+00:00",
+        "new_session": false,
+        "help_center_require_search": false,
+        "requires_cookie_consent": false,
+        "prevent_multiple_inbound_conversation": false,
+        "user_assignments": {}
+    },
+    "client_matches": [],
+    "modules": {
+        "messages": {
+            "colors": {
+                "base": "#3e8ef7",
+                "secondary": "#3e8ef7"
+            },
+            "instant_boot_enabled": true,
+            "google_analytics_tracking_id": "UA-133188976-1",
+            "use_activator": true
+        },
+        "rtm": {
+            "endpoints": [
+                "https://nexus-websocket-a.intercom.io/pubsub/5-BpLQdYhM7zTH3S4iGXVdNOqVKMPRAgRp6SxTeQhA6mMDoZqkKV4JP5BWMaukQhXdeEU2yOjlCJBKzaFx22svy1t8-dj5RyCuksjb"
+            ]
+        },
+        "metrics": {
+            "enabled": false
+        },
+        "error_reporting": {
+            "disabled": false
+        },
+        "customization": {
+            "alignment": "right",
+            "brand_name": "Hostify.com",
+            "horizontal_padding": 23,
+            "messenger_logo_url": null,
+            "launcher_logo_url": null,
+            "messenger_wallpaper": "background-7",
+            "vertical_padding": 23,
+            "action": {
+                "background_color": "#3e8ef7",
+                "foreground_color": "#000000",
+                "foreground_color_low_contrast": "#ffffff"
+            },
+            "action_contrast_white": {
+                "background_color": "#000000",
+                "foreground_color": "#ffffff"
+            },
+            "header": {
+                "background_color": "#3e8ef7",
+                "foreground_color": "#000000"
+            }
+        },
+        "home": {
+            "header": {
+                "background": {
+                    "enabled": false,
+                    "type": "solid",
+                    "color": "#3e8ef7",
+                    "fade_to_white": true,
+                    "image_url": null,
+                    "gradient": null,
+                    "animated": false
+                },
+                "content": {
+                    "greeting": {
+                        "content": "Hi VarnaStay 👋",
+                        "text_color": "#ffffff",
+                        "opacity": 1.0
+                    },
+                    "introduction": {
+                        "content": "How can we help?",
+                        "text_color": "#ffffff",
+                        "opacity": 1.0
+                    },
+                    "logo_url": null,
+                    "show_avatars": true,
+                    "close_button": {
+                        "foreground_color": "#ffffff",
+                        "background_color": "#000000",
+                        "background_opacity": 0.5
+                    },
+                    "text_color_type": "dark"
+                },
+                "header_expanded": true,
+                "identity": "ai_agent"
+            },
+            "open_config": null
+        },
+        "features": {
+            "checklists": true,
+            "checklists_reminders": true,
+            "inbound_messages": true,
+            "inbound_lead_messaging": true,
+            "outbound_messages": true,
+            "inbound_lead_messaging_docs_site": true,
+            "launcher_discovery_mode": true,
+            "marketo_enrichment_installed": false,
+            "hubspot_installed": false,
+            "google_analytics": true,
+            "single_page_app_rate_limiting": false,
+            "cross_site_cookies": false,
+            "cookie_secure_flag": false,
+            "ticket_creation": false,
+            "google_analytics_4_integration": true,
+            "view_in_help_center_button": true,
+            "customer_privacy_policy": false,
+            "eprivacy_cookie_compliance_required": false,
+            "persist_client_id_for_conversation_parts": true,
+            "messenger_new_convo_styling": false,
+            "show_implicit_privacy_policy_notice": false
+        }
+    },
+    "unread_conversation_ids": [],
+    "unread_dismissed_conversation_ids": [],
+    "anonymous_session": "eVp0OWcyQ2lsY2pGTUlWM29XWHBmSlg5YTEzZEs3RXRoWTVVUitLc0RscTZjYjRieGZRTlRTYjU5YS8reWhMdS0tT0dobmFoMHNTOEZOZHByQk94enRqdz09--cb3371e5d4363aa6c4a0c1c015a4bc80f1d77abb",
+    "identity_verification_ready": false,
+    "origin_cookie_domain": "varnastaypartners.online",
+    "cdas_breaching_limit": [],
+    "checklists": [],
+    "open_config": {
+        "form": "default",
+        "open_to": "home",
+        "spaces": [
+            {
+                "type": "home",
+                "label": "Home",
+                "navigation_label": "Home",
+                "badge": null
+            },
+            {
+                "type": "messages",
+                "label": "Messages",
+                "navigation_label": "Messages",
+                "badge": null
+            },
+            {
+                "type": "tickets",
+                "label": "Tickets",
+                "navigation_label": "Tickets",
+                "badge": null
+            },
+            {
+                "type": "help",
+                "label": "Help",
+                "navigation_label": "Help",
+                "badge": null
+            }
+        ],
+        "user_has_tickets": false,
+        "user_has_received_checklists": false,
+        "user_has_live_newsfeed": false
+    },
+    "unread_tickets_count": 0
+}

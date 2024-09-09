@@ -1,15 +1,14 @@
-var fs = require("fs");
-var { todayStr } = require("./_today");
-var CSV_FIELDS = require("./_csv_fields");
+import fs from "fs";
+import { req } from "./_req.js";
+import { todayStr } from "./_today.js";
+import { CSV_FIELDS } from "./_csv_fields.js";
 
 const PRINT_RESERVATIONS = true;
 const SAVE_AS_CSV = true;
 const SAVE_AS_JSON = true;
 
-run();
-
-function run() {
-  const resDirPath = `${__dirname}/${todayStr}/reservations`;
+export function run() {
+  const resDirPath = `./${todayStr}/reservations`;
   const resFileNames = fs.readdirSync(resDirPath);
   const reservations = [];
   for (const resFileName of resFileNames) {
@@ -36,13 +35,13 @@ function run() {
     for (const r of reservations)
       lines.push(CSV_FIELDS.map((f) => JSON.stringify(r[f])).join(","));
 
-    const filePath = `${__dirname}/${todayStr}/reservations.csv`;
+    const filePath = `./${todayStr}/reservations.csv`;
     fs.writeFileSync(filePath, lines.join("\n"));
     console.log(`Saved ${filePath}`);
   }
 
   if (SAVE_AS_JSON) {
-    const filePath = `${__dirname}/${todayStr}/reservations.json`;
+    const filePath = `./${todayStr}/reservations.json`;
     fs.writeFileSync(filePath, JSON.stringify(reservations, null, 2));
     console.log(`Saved ${filePath}`);
   }

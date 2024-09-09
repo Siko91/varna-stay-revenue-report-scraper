@@ -1,8 +1,8 @@
-var _1_login = require("./1_login.js");
-var _2_listReservationIDs = require("./2_listReservationIDs.js");
-var _3_getReservations = require("./3_getReservations.js");
-var _4_query = require("./4_queryCalendarRange.js");
-var _5_parseReservations = require("./5_parseReservations.js");
+import * as _1_login from "./_1_login.js";
+import * as _2_queryCalendarRange from "./_2_queryCalendarRange.js";
+import * as _3_listReservationIDs from "./_3_listReservationIDs.js";
+import * as _4_getReservations from "./_4_getReservations.js";
+import * as _5_parseReservations from "./_5_parseReservations.js";
 
 run()
   .then(() => {
@@ -14,9 +14,26 @@ run()
   });
 
 async function run() {
+  console.log("==> Starting step: '_1_login'");
   await _1_login.run();
-  await _2_listReservationIDs.run();
-  await _3_getReservations.run();
-  await _4_query.run();
+
+  wait(100);
+  console.log("==> Starting step: '_2_queryCalendarRange'");
+  await _2_queryCalendarRange.run();
+
+  wait(100);
+  console.log("==> Starting step: '_3_listReservationIDs'");
+  await _3_listReservationIDs.run();
+
+  wait(100);
+  console.log("==> Starting step: '_4_getReservations'");
+  await _4_getReservations.run();
+
+  wait(100);
+  console.log("==> Starting step: '_5_parseReservations'");
   await _5_parseReservations.run();
+}
+
+async function wait(ms) {
+  await new Promise((res) => setTimeout(() => res(), ms));
 }

@@ -1,4 +1,4 @@
-const CSV_FIELDS = [
+export const CSV_FIELDS = [
   "source",
   "nights",
   "checkIn",
@@ -66,5 +66,3 @@ const CSV_FIELDS = [
   "guest_id",
   "parent_listing_id",
 ];
-
-module.exports = CSV_FIELDS;

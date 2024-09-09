@@ -1,14 +1,15 @@
-var fs = require("fs");
-var { todayStr } = require("./_today");
+import fs from "fs";
+import { req } from "./_req.js";
+import { todayStr } from "./_today.js";
 
 const PRINT_RESERVATION_START = false;
 const PRINT_RESERVATION_END = true;
 const PRINT_BOOKED_DAY = false;
 
-run();
-
-function run() {
-  const calendar = require("./" + todayStr + "/calendar.json");
+export function run() {
+  const calendar = JSON.parse(
+    fs.readFileSync("./" + todayStr + "/calendar.json").toString()
+  );
 
   const statusTypes = calendar.calendar
     .map((i) => i.status)

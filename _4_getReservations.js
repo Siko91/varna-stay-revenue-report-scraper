@@ -1,13 +1,11 @@
-var fs = require("fs");
-var { req } = require("./_req");
-var { todayStr } = require("./_today");
+import fs from "fs"
+import { req } from "./_req.js"
+import { todayStr } from "./_today.js"
 
-run();
+export async function run(params) {
+  const reservationIds = JSON.parse(fs.readFileSync("./" + todayStr + "/reservationIds.json").toString());
 
-async function run(params) {
-  const reservationIds = require("./" + todayStr + "/reservationIds.json");
-
-  const resDirPath = `${__dirname}/${todayStr}/reservations`;
+  const resDirPath = `./${todayStr}/reservations`;
   if (fs.existsSync(resDirPath)) fs.rmSync(resDirPath, {recursive:true}); // Delete old Dir
   if (!fs.existsSync(resDirPath)) fs.mkdirSync(resDirPath); // Create empty Dir
 

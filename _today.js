@@ -1,5 +1,3 @@
 
 const now = new Date();
-const todayStr = `${now.getFullYear()}-${now.getMonth()}-${now.getDate()}`;
-
-module.exports = {now,todayStr}
+export const todayStr = `${now.getFullYear()}-${now.getMonth()}-${now.getDate()}`;

@@ -1,8 +1,8 @@
-var _1_login = require("1_login.js");
-var _2_listReservationIDs = require("2_listReservationIDs.js");
-var _3_getReservations = require("3_getReservations.js");
-var _4_query = require("4_query-calendar-range.js");
-var _5_parseReservations = require("5_parseReservations.js");
+var _1_login = require("./1_login.js");
+var _2_listReservationIDs = require("./2_listReservationIDs.js");
+var _3_getReservations = require("./3_getReservations.js");
+var _4_query = require("./4_queryCalendarRange.js");
+var _5_parseReservations = require("./5_parseReservations.js");
 
 run()
   .then(() => {

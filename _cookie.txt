@@ -1,1 +1,0 @@
-Path=/; HttpOnly; Secure; Path=/; HttpOnly; Secure; hfy_session_app=0c1nes9gdh4l9glgo5qjroel0p26ae10; expires=Mon, 16-Sep-2024 19:16:59 GMT; Max-Age=604800; path=/; domain=.varnastaypartners.online; HttpOnly

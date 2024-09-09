@@ -6,9 +6,9 @@ const PRINT_RESERVATIONS = true;
 const SAVE_AS_CSV = true;
 const SAVE_AS_JSON = true;
 
-parseReservations();
+run();
 
-function parseReservations() {
+function run() {
   const resDirPath = `${__dirname}/${todayStr}/reservations`;
   const resFileNames = fs.readdirSync(resDirPath);
   const reservations = [];

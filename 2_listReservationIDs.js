@@ -5,9 +5,9 @@ const PRINT_RESERVATION_START = false;
 const PRINT_RESERVATION_END = true;
 const PRINT_BOOKED_DAY = false;
 
-parseCalendar();
+run();
 
-function parseCalendar() {
+function run() {
   const calendar = require("./" + todayStr + "/calendar.json");
 
   const statusTypes = calendar.calendar

@@ -1,7 +1,4 @@
-node 1_query-calendar-range.js
-node 2_listReservationIDs.js
-node 3_getReservations.js
-node 4_parseReservations.js
+node index.js
 
 git add .
 git commit -m "auto-update"

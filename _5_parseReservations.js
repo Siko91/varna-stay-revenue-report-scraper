@@ -38,6 +38,10 @@ export function run() {
     const filePath = `./${todayStr}/reservations.csv`;
     fs.writeFileSync(filePath, lines.join("\n"));
     console.log(`Saved ${filePath}`);
+
+    const filePath2 = `./reservations-as-of-${todayStr}.csv`;
+    fs.writeFileSync(filePath2, lines.join("\n"));
+    console.log(`Saved ${filePath2}`);
   }
 
   if (SAVE_AS_JSON) {
